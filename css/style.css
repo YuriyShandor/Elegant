@@ -131,3 +131,330 @@ header::before {
 header .row * {
   z-index: 10;
 }
+
+header .top-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+header .top-header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+header .top-header__logo img {
+  height: 17px;
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+}
+
+header .top-header__logo span {
+  font-size: 23px;
+  font-weight: 500;
+  color: #fffefe;
+}
+
+header .top-header__menu .toggler-icon {
+  display: none;
+}
+
+header .top-header__menu .nav-bar {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .top-header__menu .nav-bar .nav-item {
+  list-style: none;
+  margin-left: 50px;
+}
+
+header .top-header__menu .nav-bar .nav-item:first-child {
+  margin-left: 0;
+}
+
+header .top-header__menu .nav-bar .nav-item .nav-link {
+  padding: 0;
+  color: #fff;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+
+header .top-header__menu .nav-bar .nav-item .nav-link:hover {
+  color: #07a9fd;
+}
+
+header .section-heading {
+  margin-top: 250px;
+  color: #fff;
+}
+
+header .section-heading__title {
+  margin-bottom: 53px;
+}
+
+header .section-heading__line {
+  background: #fff;
+}
+
+header .section-heading__discr {
+  margin-top: 45px;
+}
+
+header .arrow-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 250px;
+}
+
+header .arrow-down div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 95px;
+  height: 95px;
+  border: 2px solid #78858c;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+
+header .arrow-down div i {
+  font-size: 60px;
+  color: #78858c;
+}
+
+header .arrow-down div:hover {
+  border: 2px solid #07a9fd;
+}
+
+header .arrow-down div:hover i {
+  color: #07a9fd;
+}
+
+.section-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #222;
+  margin-top: 117px;
+}
+
+.section-heading__title {
+  font-family: Raleway;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 74px;
+}
+
+.section-heading__line {
+  width: 85px;
+  height: 2px;
+  background: #222;
+}
+
+.section-heading__discr {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 70px;
+}
+
+@media only screen and (max-width: 1199px) {
+  header {
+    height: 850px;
+  }
+  header .top-header {
+    margin-top: 40px;
+  }
+  header .top-header__menu .nav-bar .nav-item {
+    margin-left: 40px;
+  }
+  header .section-heading {
+    margin-top: 220px;
+    color: #fff;
+  }
+  header .section-heading__title {
+    margin-bottom: 50px;
+  }
+  header .section-heading__line {
+    background: #fff;
+  }
+  header .section-heading__discr {
+    margin-top: 40px;
+  }
+  header .arrow-down {
+    margin-top: 200px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  header {
+    height: 780px;
+  }
+  header .top-header {
+    margin-top: 30px;
+  }
+  header .top-header__menu {
+    position: relative;
+    z-index: 100;
+  }
+  header .top-header__menu .toggler-icon {
+    display: block;
+  }
+  header .top-header__menu .toggler-icon i {
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all, 0.3s;
+    transition: all, 0.3s;
+  }
+  header .top-header__menu .toggler-icon i:hover {
+    color: #07a9fd;
+  }
+  header .top-header__menu .nav-bar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 300px;
+    background: #07a9fd;
+  }
+  header .top-header__menu .nav-bar .nav-item {
+    margin-left: 0;
+    -webkit-transition: all, 0.3s;
+    transition: all, 0.3s;
+  }
+  header .top-header__menu .nav-bar .nav-item:hover {
+    background: #fff;
+  }
+  header .top-header__menu .nav-bar .nav-item .nav-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  header .section-heading {
+    margin-top: 210px;
+    color: #fff;
+  }
+  header .section-heading__title {
+    margin-bottom: 50px;
+    font-size: 44px;
+  }
+  header .section-heading__discr {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+  header .arrow-down {
+    margin-top: 160px;
+  }
+  header .arrow-down div {
+    width: 85px;
+    height: 85px;
+  }
+  header .arrow-down div i {
+    font-size: 52px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    height: 670px;
+  }
+  header .section-heading {
+    margin-top: 165px;
+    color: #fff;
+  }
+  header .section-heading__title {
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+  header .section-heading__discr {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+  header .arrow-down {
+    margin-top: 120px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  header {
+    height: 575px;
+  }
+  header .top-header {
+    margin-top: 20px;
+    padding: 0 15px;
+  }
+  header .top-header__menu .nav-bar {
+    width: 274px;
+  }
+  header .top-header__menu .nav-bar .nav-item .nav-link {
+    padding: 5px 0;
+  }
+  header .section-heading {
+    margin-top: 100px;
+    color: #fff;
+  }
+  header .section-heading__title {
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+  header .section-heading__discr {
+    margin-top: 25px;
+    font-size: 15px;
+  }
+  header .arrow-down {
+    margin-top: 100px;
+  }
+  header .arrow-down div {
+    width: 70px;
+    height: 70px;
+  }
+  header .arrow-down div i {
+    font-size: 46px;
+  }
+}
