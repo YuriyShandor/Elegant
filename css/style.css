@@ -134,7 +134,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  padding: 0;
   margin-bottom: 74px;
 }
 
@@ -149,7 +148,6 @@ body {
   font-weight: 400;
   text-align: center;
   margin: 0;
-  padding: 0;
   margin-top: 70px;
 }
 
@@ -449,6 +447,7 @@ header .arrow-down div:hover i {
     margin-bottom: 30px;
   }
   .section-heading__discr {
+    width: 95%;
     font-size: 15px;
     margin-top: 25px;
   }
@@ -502,5 +501,112 @@ header .arrow-down div:hover i {
 @media only screen and (max-width: 575px) {
   #about-us {
     padding-bottom: 70px;
+  }
+}
+
+.section-smartphone {
+  width: 100%;
+  background: url(../img/section-smartphone__bg.jpg) no-repeat center/cover;
+}
+
+.section-smartphone__discr {
+  margin-top: 45px;
+}
+
+.section-smartphone__discr h1 {
+  margin: 0;
+  font-size: 45px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.section-smartphone__discr p {
+  font-size: 22px;
+  font-weight: 100;
+  color: silver;
+  width: 95%;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.section-smartphone__discr a {
+  width: auto;
+  font-size: 18px;
+  font-weight: 400;
+  color: #d9d9d9;
+  text-decoration: underline;
+  text-transform: lowercase;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+
+.section-smartphone__discr a:hover {
+  color: #07a9fd;
+}
+
+.section-smartphone__smartphone img {
+  margin-top: 75px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .section-smartphone__discr {
+    margin-top: 35px;
+  }
+  .section-smartphone__discr h1 {
+    font-size: 42px;
+  }
+  .section-smartphone__discr p {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .section-smartphone__discr {
+    margin-top: 90px;
+  }
+  .section-smartphone__discr h1 {
+    font-size: 32px;
+  }
+  .section-smartphone__discr p {
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+  .section-smartphone__smartphone img {
+    margin-top: 75px;
+    width: 230px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section-smartphone__discr h1 {
+    font-size: 26px;
+  }
+  .section-smartphone__discr p {
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+  .section-smartphone__smartphone img {
+    margin-top: 55px;
+    width: 180px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .section-smartphone__discr {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+  .section-smartphone__discr h1 {
+    font-size: 22px;
+  }
+  .section-smartphone__discr p {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  .section-smartphone__smartphone {
+    display: none;
   }
 }
