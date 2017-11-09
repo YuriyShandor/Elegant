@@ -112,9 +112,50 @@ body {
   flex-direction: column;
 }
 
+.section-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #222;
+  margin-top: 117px;
+}
+
+.section-heading__title {
+  font-family: Raleway;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 74px;
+}
+
+.section-heading__line {
+  width: 85px;
+  height: 2px;
+  background: #222;
+}
+
+.section-heading__discr {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 70px;
+}
+
 header {
   width: 100%;
-  height: 900px;
+  padding-bottom: 20px;
   position: relative;
   background: url(../img/header__bg.jpg) no-repeat center/cover;
 }
@@ -223,7 +264,7 @@ header .arrow-down {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 250px;
+  margin-top: 200px;
 }
 
 header .arrow-down div {
@@ -248,6 +289,8 @@ header .arrow-down div {
 header .arrow-down div i {
   font-size: 60px;
   color: #78858c;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
 }
 
 header .arrow-down div:hover {
@@ -256,52 +299,21 @@ header .arrow-down div:hover {
 
 header .arrow-down div:hover i {
   color: #07a9fd;
-}
-
-.section-heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #222;
-  margin-top: 117px;
-}
-
-.section-heading__title {
-  font-family: Raleway;
-  font-size: 48px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 74px;
-}
-
-.section-heading__line {
-  width: 85px;
-  height: 2px;
-  background: #222;
-}
-
-.section-heading__discr {
-  font-size: 22px;
-  font-weight: 400;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  margin-top: 70px;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
 }
 
 @media only screen and (max-width: 1199px) {
-  header {
-    height: 850px;
+  .section-heading {
+    margin-top: 110px;
+  }
+  .section-heading__title {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  .section-heading__discr {
+    font-size: 22px;
+    margin-top: 40px;
   }
   header .top-header {
     margin-top: 40px;
@@ -311,13 +323,9 @@ header .arrow-down div:hover i {
   }
   header .section-heading {
     margin-top: 220px;
-    color: #fff;
   }
   header .section-heading__title {
     margin-bottom: 50px;
-  }
-  header .section-heading__line {
-    background: #fff;
   }
   header .section-heading__discr {
     margin-top: 40px;
@@ -328,8 +336,16 @@ header .arrow-down div:hover i {
 }
 
 @media only screen and (max-width: 991px) {
-  header {
-    height: 780px;
+  .section-heading {
+    margin-top: 100px;
+  }
+  .section-heading__title {
+    font-size: 44px;
+    margin-bottom: 40px;
+  }
+  .section-heading__discr {
+    font-size: 20px;
+    margin-top: 30px;
   }
   header .top-header {
     margin-top: 30px;
@@ -378,15 +394,12 @@ header .arrow-down div:hover i {
   }
   header .section-heading {
     margin-top: 210px;
-    color: #fff;
   }
   header .section-heading__title {
     margin-bottom: 50px;
-    font-size: 44px;
   }
   header .section-heading__discr {
     margin-top: 40px;
-    font-size: 20px;
   }
   header .arrow-down {
     margin-top: 160px;
@@ -401,8 +414,16 @@ header .arrow-down div:hover i {
 }
 
 @media only screen and (max-width: 767px) {
-  header {
-    height: 670px;
+  .section-heading {
+    margin-top: 90px;
+  }
+  .section-heading__title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .section-heading__discr {
+    font-size: 18px;
+    margin-top: 30px;
   }
   header .section-heading {
     margin-top: 165px;
@@ -410,11 +431,9 @@ header .arrow-down div:hover i {
   }
   header .section-heading__title {
     margin-bottom: 40px;
-    font-size: 40px;
   }
   header .section-heading__discr {
     margin-top: 30px;
-    font-size: 18px;
   }
   header .arrow-down {
     margin-top: 120px;
@@ -422,8 +441,16 @@ header .arrow-down div:hover i {
 }
 
 @media only screen and (max-width: 575px) {
-  header {
-    height: 575px;
+  .section-heading {
+    margin-top: 70px;
+  }
+  .section-heading__title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .section-heading__discr {
+    font-size: 15px;
+    margin-top: 25px;
   }
   header .top-header {
     margin-top: 20px;
@@ -437,15 +464,12 @@ header .arrow-down div:hover i {
   }
   header .section-heading {
     margin-top: 100px;
-    color: #fff;
   }
   header .section-heading__title {
     margin-bottom: 30px;
-    font-size: 32px;
   }
   header .section-heading__discr {
     margin-top: 25px;
-    font-size: 15px;
   }
   header .arrow-down {
     margin-top: 100px;
@@ -456,5 +480,27 @@ header .arrow-down div:hover i {
   }
   header .arrow-down div i {
     font-size: 46px;
+  }
+}
+
+#about-us {
+  padding-bottom: 120px;
+}
+
+@media only screen and (max-width: 1199px) {
+  #about-us {
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #about-us {
+    padding-bottom: 90px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #about-us {
+    padding-bottom: 70px;
   }
 }
