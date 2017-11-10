@@ -632,10 +632,16 @@ header .arrow-down div:hover i {
   font-weight: 700;
   color: #767676;
   cursor: pointer;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
 }
 
 #our-works .our-works__menu ul .our-works__class:first-child {
   margin-left: 0;
+}
+
+#our-works .our-works__menu ul .our-works__class:hover {
+  color: #07a9fd;
 }
 
 #our-works .work {
@@ -644,7 +650,14 @@ header .arrow-down div:hover i {
 
 #our-works .work__inside {
   width: inherit;
-  height: 50vh;
+  height: 52vh;
+}
+
+#our-works .work__inside:hover .work__inside_hover {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #our-works .work__inside .work__inside_hover {
@@ -653,4 +666,182 @@ header .arrow-down div:hover i {
   position: absolute;
   top: 0;
   background: rgba(0, 0, 0, 0.7);
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#our-works .work__inside .work__inside_hover a {
+  width: 60%;
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+
+#our-works .work__inside .work__inside_hover a:hover {
+  color: #07a9fd;
+}
+
+#our-works .more-works {
+  padding: 80px 0;
+}
+
+#our-works .more-works__btn {
+  padding: 20px 0;
+  border: 2px solid #000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+  cursor: pointer;
+  text-transform: uppercase;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+
+#our-works .more-works__btn:hover {
+  color: #fff;
+  background: #000;
+}
+
+.work-hidden {
+  display: none;
+}
+
+.work-btn_active {
+  color: #000 !important;
+}
+
+@media only screen and (max-width: 1199px) {
+  #our-works .our-works__menu {
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+  #our-works .our-works__menu ul .our-works__class {
+    margin-left: 30px;
+  }
+  #our-works .work {
+    margin-top: 30px;
+  }
+  #our-works .work__inside {
+    height: 48vh;
+  }
+  #our-works .work__inside .work__inside_hover {
+    width: 91%;
+  }
+  #our-works .work__inside .work__inside_hover a {
+    width: 60%;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #our-works .our-works__menu {
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+  #our-works .our-works__menu ul .our-works__class {
+    margin-left: 30px;
+  }
+  #our-works .work {
+    margin-top: 30px;
+  }
+  #our-works .work__inside {
+    height: 50vh;
+  }
+  #our-works .work__inside .work__inside_hover {
+    width: 92%;
+  }
+  #our-works .work__inside .work__inside_hover a {
+    width: 63%;
+    font-size: 22px;
+  }
+  #our-works .more-works {
+    padding: 60px 0;
+  }
+  #our-works .more-works__btn {
+    padding: 15px 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #our-works .our-works__menu {
+    margin-top: 60px;
+    margin-bottom: 25px;
+  }
+  #our-works .our-works__menu ul .our-works__class {
+    margin-left: 20px;
+    font-size: 17px;
+  }
+  #our-works .work {
+    margin-top: 30px;
+  }
+  #our-works .work__inside {
+    height: 37vh;
+  }
+  #our-works .work__inside .work__inside_hover {
+    width: 89%;
+  }
+  #our-works .work__inside .work__inside_hover a {
+    width: 70%;
+    font-size: 18px;
+  }
+  #our-works .more-works {
+    padding: 50px 0;
+  }
+  #our-works .more-works__btn {
+    padding: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #our-works .our-works__menu {
+    margin-top: 45px;
+    margin-bottom: 20px;
+  }
+  #our-works .our-works__menu ul {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  #our-works .our-works__menu ul .our-works__class {
+    margin-left: 0;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  #our-works .work {
+    margin-top: 30px;
+  }
+  #our-works .work__inside {
+    height: 42vh;
+  }
+  #our-works .work__inside .work__inside_hover {
+    width: 90%;
+  }
+  #our-works .work__inside .work__inside_hover a {
+    width: 70%;
+    font-size: 18px;
+  }
+  #our-works .more-works {
+    padding: 40px 0;
+  }
+  #our-works .more-works__btn {
+    padding: 5px 0;
+    font-size: 20px;
+  }
 }
