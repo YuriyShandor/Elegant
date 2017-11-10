@@ -1037,10 +1037,39 @@ header {
   }
 }
 
+.services-slider__nav {
+  width: 35px;
+  height: 70px;
+  border: 2px solid $nice_blue;
+  border-radius: 5px;
+  color: $nice_blue;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 43%;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s;
+
+  &:hover {
+    background: $nice_blue;
+    color: #fff;
+  }
+
+  &_next {
+    right: 0;
+  }
+}
+
 @media only screen and (max-width : 1199px) {
   .services-slider {
-    width: 940px;
-
     .slick-list {
       -webkit-transform: translateX(7px);
               transform: translateX(7px);
@@ -1054,15 +1083,47 @@ header {
 }
 
 @media only screen and (max-width : 991px) {
+  .services-slider {
+    .slick-list {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
 
+    &__slide {
+      margin-top: 70px;
+      margin-bottom: 80px;
+
+      p {
+        padding: 0 15px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
+  .services-slider {
+    &__slide {
+      margin-top: 65px;
+      margin-bottom: 50px;
 
+      p {
+        padding: 0;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 567px) {
+  .services-slider {
+    &__slide {
+      margin-top: 65px;
+      margin-bottom: 50px;
 
+      p {
+        padding: 0;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 1199px) {

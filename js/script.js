@@ -27,14 +27,23 @@ $(document).ready(function() {
     //variableWidth: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 5000,
+    nextArrow: $(".services-slider__nav_next"),
+    prevArrow: $(".services-slider__nav_prev"),
+    autoplay: true,
+    autoplaySpeed: 5000,
     responsive: [
+      {
+        breakpoint: 991,
+
+        settings: {
+          slidesToShow: 2,
+        }
+      },
       {
         breakpoint: 567,
 
         settings: {
-
+          slidesToShow: 1,
         }
       }
     ]
