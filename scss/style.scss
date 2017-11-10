@@ -890,21 +890,69 @@ header {
   }
 }
 
+#our-clients {
+  width: 100%;
+  background: #f4f4f4;
+
+  .clients {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    a {
+      margin:0 25px 30px 25px;
+
+      img {
+        -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+        -webkit-transition: all, 0.3s;
+        transition: all, 0.3s;
+
+        &:hover {
+          -webkit-filter: grayscale(0%);
+                  filter: grayscale(0%)
+        }
+      }
+    }
+  }
+}
 
 @media only screen and (max-width : 1199px) {
+  #our-clients {
+    .clients {
+      margin-top: 90px;
+      margin-bottom: 60px;
 
+      a {
+        margin:0 15px 30px 15px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {
+  #our-clients {
+    .clients {
+      margin-top: 90px;
+      margin-bottom: 60px;
 
-}
-
-@media only screen and (max-width : 767px) {
-
+      a {
+        margin:0 20px 30px 20px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 575px) {
+  #our-clients {
+    .clients {
+      margin-top: 60px;
+      margin-bottom: 30px;
 
+      a {
+        margin:0 30px 30px 30px;
+      }
+    }
+  }
 }
 
 
