@@ -15,4 +15,28 @@ $(document).ready(function() {
       $(`.work__${item}`).removeClass('work-hidden');
     });
   });
+
+  // var servicesSlider = $('.services-slider');
+  // var maxItems = Math.round(servicesSlider.parent('div').width() / 400);
+  // if(servicesSlider.children('div').length < maxItems) {
+  //   maxItems = servicesSlider.children('div').length;
+  // }
+
+  $('.services-slider').slick({
+    infinite: true,
+    //variableWidth: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    // autoplay: true,
+    // autoplaySpeed: 5000,
+    responsive: [
+      {
+        breakpoint: 567,
+
+        settings: {
+
+        }
+      }
+    ]
+  });
 });

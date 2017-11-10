@@ -955,3 +955,40 @@ header .arrow-down div:hover i {
     display: none;
   }
 }
+
+.services-slider__slide {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.services-slider__slide img {
+  margin: 0 auto;
+  height: 130px;
+}
+
+.services-slider__slide h1 {
+  margin: 35px 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.services-slider__slide p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 35px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .services-slider {
+    width: 940px;
+  }
+  .services-slider .slick-list {
+    -webkit-transform: translateX(7px);
+    transform: translateX(7px);
+  }
+  .services-slider__slide p {
+    padding: 0;
+  }
+}
