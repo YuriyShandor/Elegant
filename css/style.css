@@ -610,3 +610,47 @@ header .arrow-down div:hover i {
     display: none;
   }
 }
+
+#our-works .our-works__menu {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+#our-works .our-works__menu ul {
+  padding: 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#our-works .our-works__menu ul .our-works__class {
+  margin-left: 30px;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 19px;
+  font-weight: 700;
+  color: #767676;
+  cursor: pointer;
+}
+
+#our-works .our-works__menu ul .our-works__class:first-child {
+  margin-left: 0;
+}
+
+#our-works .work {
+  margin-top: 30px;
+}
+
+#our-works .work__inside {
+  width: inherit;
+  height: 50vh;
+}
+
+#our-works .work__inside .work__inside_hover {
+  width: 92.3%;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+}

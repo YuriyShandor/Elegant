@@ -609,6 +609,72 @@ header {
   }
 }
 
+#our-works {
+  .our-works__menu {
+    margin-top: 80px;
+    margin-bottom: 50px;
+
+    ul {
+      padding: 0;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+
+      .our-works__class {
+        margin-left: 30px;
+        list-style: none;
+        text-transform: uppercase;
+        font-size: 19px;
+        font-weight: 700;
+        color: #767676;
+        cursor: pointer;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .work {
+    margin-top: 30px;
+
+
+    &__inside {
+      width: inherit;
+      height: 50vh;
+
+      .work__inside_hover {
+        width: 92.3%;
+        height: inherit;
+        position: absolute;
+        top: 0;
+        background: rgba(0, 0, 0, 0.7);
+      }
+    }
+
+
+    // &__img {
+    //   width: 100%;
+    //   position: relative;
+    //
+    //   &:hover {
+    //     width: inherit;
+    //     height: inherit;
+    //     position: absolute;
+    //     top: 0;
+    //     background: rgba(0, 0, 0, 0.7);
+    //   }
+    // }
+    //
+    // // &__hover {
+    // //   position: absolute;
+    // //   top: 0;
+    // //   background: rgba(0, 0, 0, 0.7);
+    // // }
+  }
+}
 
 @media only screen and (max-width : 1199px) {
 
