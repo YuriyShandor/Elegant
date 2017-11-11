@@ -1228,3 +1228,114 @@ header .arrow-down div:hover i {
     margin-top: 10px;
   }
 }
+
+footer {
+  width: 100%;
+  background: url(../img/footer__bg.jpg) no-repeat center/cover;
+}
+
+footer .section-heading {
+  color: #fff;
+}
+
+footer .section-heading__line {
+  background: #fff;
+}
+
+footer .social-icons {
+  margin-top: 60px;
+}
+
+footer .social-icons a {
+  margin-left: 20px;
+  color: #fff;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+
+footer .social-icons a:first-child {
+  margin-left: 0;
+}
+
+footer .social-icons a:hover {
+  color: #07a9fd;
+}
+
+footer .social-icons a i {
+  font-size: 28px;
+}
+
+footer .contact-form {
+  margin-bottom: 50px;
+}
+
+footer .contact-form__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+footer .contact-form__block input {
+  width: 88%;
+  margin-top: 80px;
+  padding-left: 30px;
+  padding-bottom: 15px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #afafaf;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: #676767;
+  font-style: italic;
+}
+
+footer .send-messege__btn {
+  padding: 10px 0;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 120px;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+
+footer .send-messege__btn:hover {
+  border: 2px solid #07a9fd;
+  background: #07a9fd;
+}
+
+@media only screen and (max-width: 991px) {
+  footer .send-messege__btn {
+    padding: 5px 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer .social-icons a i {
+    font-size: 24px;
+  }
+  footer .send-messege__btn {
+    padding: 5px 0;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  footer .contact-form input {
+    margin-top: 55px;
+  }
+}
