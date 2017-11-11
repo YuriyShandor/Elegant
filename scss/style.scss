@@ -1126,20 +1126,121 @@ header {
   }
 }
 
-@media only screen and (max-width : 1199px) {
+#section-counter {
+  width: 100%;
+  position: relative;
+  background: url(../img/section-smartphone__bg.jpg) no-repeat center / cover;
 
+  &::before {
+    background: rgba(1, 37, 54, 0.55);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+
+  .row {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    .counter-block {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 100px 0;
+
+      .count-value {
+        font-size: 60px;
+        font-weight: 100;
+        color: darken(#fff, 30%);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: darken(#fff, 10%);
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {
+  #section-counter {
 
+    .row {
+      .counter-block {
+        margin: 80px 0;
+
+        .count-value {
+          font-size: 50px;
+        }
+
+        h1 {
+          font-size: 20px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
+  #section-counter {
 
+    .row {
+      .counter-block {
+        margin: 65px 0;
+
+        .count-value {
+          font-size: 35px;
+        }
+
+        h1 {
+          font-size: 15px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 567px) {
+  #section-counter {
 
+    .row {
+      margin: 30px 0;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      .counter-block {
+        margin: 10px 15px;
+
+        .count-value {
+          font-size: 34px;
+        }
+
+        h1 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
 
 
