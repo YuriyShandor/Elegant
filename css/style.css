@@ -1152,3 +1152,79 @@ header .arrow-down div:hover i {
     font-size: 14px;
   }
 }
+
+.skills {
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+
+.skills__discr {
+  padding-right: 30px;
+}
+
+.skills__discr h1 {
+  font-size: 27px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.skills__discr p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+.skills__progress-bar {
+  margin-top: 20px;
+}
+
+.skills__progress-bar h1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 991px) {
+  .skills {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .skills__discr {
+    padding: 0px 15px;
+    text-align: center;
+  }
+  .skills__progress {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .skills {
+    margin-top: 55px;
+    margin-bottom: 55px;
+  }
+  .skills__discr h1 {
+    font-size: 22px;
+  }
+  .skills__discr p {
+    font-size: 16px;
+  }
+  .skills__progress {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .skills {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .skills__discr h1 {
+    font-size: 20px;
+  }
+  .skills__progress {
+    margin-top: 10px;
+  }
+}
