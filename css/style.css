@@ -156,6 +156,7 @@ header {
   padding-bottom: 20px;
   position: relative;
   background: url(../img/header__bg.jpg) no-repeat center/cover;
+  background-attachment: fixed;
 }
 
 header::before {
@@ -344,6 +345,9 @@ header .arrow-down div:hover i {
   .section-heading__discr {
     font-size: 20px;
     margin-top: 30px;
+  }
+  header {
+    background-attachment: scroll;
   }
   header .top-header {
     margin-top: 30px;
@@ -1232,6 +1236,7 @@ header .arrow-down div:hover i {
 footer {
   width: 100%;
   background: url(../img/footer__bg.jpg) no-repeat center/cover;
+  background-attachment: fixed;
 }
 
 footer .section-heading {
@@ -1319,6 +1324,9 @@ footer .send-messege__btn:hover {
 }
 
 @media only screen and (max-width: 991px) {
+  footer {
+    background-attachment: scroll;
+  }
   footer .send-messege__btn {
     padding: 5px 0;
   }
